@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+  background:url("https://artprojectsforkids.org/wp-content/uploads/2020/12/Cartoon-House-1024x792.jpg");
+  height: 100vh;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover ;
+  display: grid;
+  place-items:center;
+  position: relative;
+}
+.card{
+    background-color: #fff;
+    padding: 60px 150px;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card span{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.model
+ {
+    position: absolute;
+    width: 300px;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    visibility: hidden;
+    z-index: -3;
+
+ }
+
+ .model ion-icon{
+    position: absolute;
+    top: 15px;
+    right:23px;
+    font-size: 23px;
+    cursor: pointer;
+ }
+
+
+ .show_model{
+    visibility: visible;
+    z-index: 5;
+ }

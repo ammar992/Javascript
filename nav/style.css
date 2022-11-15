@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.logo img{
+    width: 60px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+nav .burger div{
+    width: 22px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 1s;
+}
+nav .burger{
+    cursor: pointer;
+    display: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: inherit  ;
+    color: blue;
+    cursor: pointer;
+}
+.active{
+    transform: translateY(0%);
+}
+
+@media screen and (max-width: 980px) {
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background-color:aliceblue ;
+        right: 0;
+        position: fixed;
+        height: 98.5vh;
+        top: 1.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in;
+
+    }
+   
+    nav .burger{
+        display: block;
+        z-index: 5;
+    }
+    .logo{
+        z-index: 5;
+    }
+  }
